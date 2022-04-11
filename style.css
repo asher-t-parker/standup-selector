@@ -1,0 +1,15 @@
+body {
+    color: hsl(180, 100%, 93%);
+    background-color: hsla(180, 100%, 10%, 1); 
+    width: 100%;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+div {
+    margin: auto;
+    width: 60%;
+}
+
+div button {
+    text-align: center;
+}

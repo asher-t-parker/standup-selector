@@ -1,5 +1,7 @@
+// apprentice list
 const apprentices = ['Asher', 'Amanda', 'An', 'Bria', 'Ty', 'Colin', 'Jovante', 'Kristian', 'McKenzie', 'Rex', 'Ross', 'Ryan', 'Will'];
   
+//randomising functions 
 function randIndex(array) { 
     const randIndex = Math.floor(Math.random() * array.length);
     return randIndex;
@@ -20,6 +22,30 @@ function tripletiser(array) {
     }
     return trishuffled;
 }
-  
-console.log(tripletiser(apprentices));
 
+function hostSelector(array) {
+    const host = array[randIndex(array)];
+    return host;
+}
+
+console.log(randIndex(apprentices));
+console.log(shuffle(apprentices));
+console.log(tripletiser(apprentices));
+console.log(hostSelector(apprentices));
+/*
+//DOM Interaction
+const listItems = document.querySelectorAll("li");
+const hostLine = document.getElementById("h2");
+
+function assign() {
+    const selectedHost = hostSelector(apprentices);
+    hostLine.innerHTML = `Your host today will be: ${selectedHost}`;
+    const shuffledArr = tripletiser(apprentices);
+    for(let item of listItems) {
+        item.innerHTML = shuffledArr[i];
+    }
+
+const shuffleButton = document.getElementById("button");
+shuffleButton.addEventListener('click', assign);    
+}
+*/
