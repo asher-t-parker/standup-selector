@@ -41,8 +41,8 @@ function assign() {
     const selectedHost = hostSelector(apprentices);
     hostLine.innerHTML = `Your host today will be: ${selectedHost}`;
     const shuffledArr = tripletiser(apprentices);
-    for(let item of listItems) {
-        item.innerHTML = shuffledArr[i];
+    for(let i = 0; i < listItems.length; i++) {
+        listItems[i].innerHTML = shuffledArr[i];
     }
 }
 
