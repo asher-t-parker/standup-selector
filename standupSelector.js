@@ -44,8 +44,9 @@ function assign() {
     for(let item of listItems) {
         item.innerHTML = shuffledArr[i];
     }
+}
 
 const shuffleButton = document.getElementById("button");
 shuffleButton.addEventListener('click', assign);    
-}
+
 
