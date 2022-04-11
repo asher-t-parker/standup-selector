@@ -32,7 +32,7 @@ console.log(randIndex(apprentices));
 console.log(shuffle(apprentices));
 console.log(tripletiser(apprentices));
 console.log(hostSelector(apprentices));
-/*
+
 //DOM Interaction
 const listItems = document.querySelectorAll("li");
 const hostLine = document.getElementById("h2");
@@ -48,4 +48,4 @@ function assign() {
 const shuffleButton = document.getElementById("button");
 shuffleButton.addEventListener('click', assign);    
 }
-*/
+
